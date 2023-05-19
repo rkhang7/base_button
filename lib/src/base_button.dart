@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class CustomButton extends StatelessWidget {
+class BaseButton extends StatelessWidget {
   final Function()? onPressed;
   final Widget? child;
   final Color? backgroundColor;
@@ -9,7 +9,7 @@ class CustomButton extends StatelessWidget {
   final double? borderRadius;
   final double? elevation;
   final double? padding;
-  const CustomButton({
+  const BaseButton({
     Key? key,
     this.onPressed,
     this.child,
@@ -27,12 +27,12 @@ class CustomButton extends StatelessWidget {
       style: ElevatedButton.styleFrom(
         backgroundColor: backgroundColor ?? Colors.green,
         minimumSize: Size(
-          width ?? MediaQuery.of(context).size.width,
-          height ?? 100,
+          width ?? MediaQuery.of(context).size.width / 2,
+          height ?? 50,
         ),
         maximumSize: Size(
-          width ?? MediaQuery.of(context).size.width,
-          height ?? 100,
+          width ?? MediaQuery.of(context).size.width / 2,
+          height ?? 50,
         ),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(borderRadius ?? 4),
