@@ -1,6 +1,6 @@
 name: base_button
 description: BaseButton is a versatile Flutter package that provides a foundational component for building various types of buttons in your Flutter applications. It simplifies the process of creating and customizing buttons by offering a set of flexible and reusable button widgets
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/rkhang7/base_button
 
 environment:
